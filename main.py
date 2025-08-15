@@ -55,8 +55,8 @@ class RustPluginBot:
                 {"role": "system", "content": system_content},
                 {"role": "user", "content": prompt}
             ],
-            "max_tokens": 2000,
-            "temperature": 0.7
+            "max_tokens": 1000,
+            "temperature": 0.9
         }
 
         try:
@@ -82,8 +82,8 @@ class RustPluginBot:
                 )},
                 {"role": "user", "content": f"Исходный код:\n{code}\n\nЗапрос на изменение: {prompt}"}
             ],
-            "max_tokens": 2000,
-            "temperature": 0.7
+            "max_tokens": 1000,
+            "temperature": 0.8
         }
 
         try:
